@@ -3,7 +3,6 @@ function queryOverpass (opt, callback) {
 	if (!opt.timeout) { opt.timeout = 25; };
 	var query = 
 		'[out:json]' +
-		(opt.date ? '[date:"'+opt.date+'"]' : '') +
 		'[timeout:'+opt.timeout+'];'+
 		opt.query;
 	console.log('QUERYING: '+query);
